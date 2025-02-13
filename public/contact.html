@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,noarchive, nofollow" />
+    <title>Alex Wiedenhoeft</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <header>
+        <h1>Alex Wiedenhoeft</h1>
+        <img src="android-chrome-192x192.png" alt="" width="" height=""/>
+    </header>
+
+    <nav>
+        <a href="warning.html">Back</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Profile</h2>
+            
+            <article>
+                <p>Tell us more about your reading habits and preferences!</p>
+                <form action="/results" method="POST">
+                    <fieldset>
+                        <legend>Tell us about yourself...</legend>
+
+                        <label for="fullName" class="required" aria-required="true">First and Last Name</label>
+                            <input type="text"
+                                   name="fullName" id="fullName"
+                                   size="30"
+                                   maxLength="100"
+                                   required
+                                   placeholder="First and last name"
+                                   autofocus
+                                   />
+                        <br>
+                        <label for="email" class="required" aria-required="true">Email</label>
+                            <input type="email"
+                                   name="email" id="email"
+                                   size="30"
+                                   maxLength="100"
+                                   required
+                                   placeholder="Email address"
+                                   />
+                        <p><label for="comments" class="required" aria-required="true">Anything else you'd like us to know?</label>
+                            <textarea name="comments" id="comments" minLength="3" maxLength="250" placeholder="Please type 3-250 characters."></textarea>
+                        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your reading preferences...</legend>
+                        <label for="why">What is your favorite genre?</label>
+                            <select name="purpose" id="why">
+                                <option value="ScienceFantasy">Science Fiction/Fantasy</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Mystery">Mystery</option>
+                                <option value="Nonfiction">Non-fiction</option>
+                            </select>
+                        <p>Would you be interested in a newsletter about new book releases?<br>
+                            <label for="yes">
+                                <input type="radio" name="newsletter" id="yes" value="would" /> 
+                                Yes, I would.</label>
+                            <label for="no">
+                                <input type="radio" name="newsletter" id="no" value="wouldn't" />
+                                No, I wouldn't.</label>
+                        </p>
+                        <p>What other genres would you like to receive recommendations for?
+                            <label for="ScienceFantasy" title="">
+                                <input type="checkbox" name="aspects" id="ScienceFantasy" value="ScienceFantasy"/>
+                                Science Fiction/Fantasy
+                            </label>
+                            <label for="Romance" title="">
+                                <input type="checkbox" name="aspects" id="Romance" value="Romance"/>
+                                Romance
+                            </label>
+                            <label for="Mystery" title="">
+                                <input type="checkbox" name="aspects" id="Mystery" value=" Mystery"/>
+                                Mystery
+                            </label>
+                            <label for="Nonfiction" title="">
+                                <input type="checkbox" name="aspects" id="Nonfiction" value=" Nonfiction"/>
+                                Non-Fiction
+                            </label>
+    
+                        </p>
+                        <button type="submit">Submit form</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 Alex Wiedenhoeft</p></footer>
+</body>
+</html>
