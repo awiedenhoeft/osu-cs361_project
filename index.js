@@ -61,7 +61,7 @@ app.post("/results", (req, res) => {
             <h2>Response</h2>
                 <article>
                     <h3>Hello, ${name}.</h3>
-                    <p>Thank you for your response! You told use that you want to learn about web development ${reason}.
+                    <p>Thank you for your response! You told use that you want to learn about new book releases ${reason}.
                     You also indicated that you ${letter} like to receive a newsletter, and that you want to learn more about${topics}.
                     Your additional thoughts were:</p>
                     <p>${thoughts}.</p>
