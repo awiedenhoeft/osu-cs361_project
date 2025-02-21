@@ -1,0 +1,451 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+/*   ----- Variables  -----  */
+:root {
+    --lightBrown: hsl(24, 27%, 64%);
+    --jadeGreen: hsl(125, 21%, 76%);
+    --lightMint: hsl(96, 27%, 80%);
+    --lightBeige: hsl(64, 26%, 88%);
+    --darkBrown: hsl(25, 79%, 11%);
+    --transparentGreen: hsla(56, 29%, 61%, 0.8);
+    --custom-embellishment-name:;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body { /* Can alternatively define in html {}. */
+    background-color: var(--mediumBlue);
+    background-image: linear-gradient(#b5cfb7, #e7e8d8);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--darkBrown);
+    font-family: "Inter", sans-serif;
+    font-family: "Borel", sans-serif; /* Define with at least one font name and its related generic family name.*/
+    margin: 0 auto;
+    width: 80%;
+    padding:;
+    max-width:;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    text-align: center;
+    color: var(--lightbeige);
+    background-color: var(--lightMint);
+    line-height: 1.2;
+    padding: 2%;
+    border: solid var(--jadeGreen);
+}
+
+main { margin-top: 20px;
+       
+}
+
+section {background-color: var(--lightMint);
+         border: solid var(--jadeGreen)
+}
+
+article {
+    border-top: 4px dotted var(--lightBrown);
+    font-family: "Inter", sans-serif;
+    margin: 2%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#topic1 {
+}
+
+#topic2 {
+}
+
+div {
+}
+
+aside {
+}
+
+footer {
+    text-align: center;
+    color: var(--darkBrown);
+    background-color: var(--jadeGreen);
+    line-height: 1.2;
+    padding: 2%;
+    border: solid var(--lightMint);
+}
+
+/* ----- Anchors ----- Text links */
+a {
+}
+
+    a:link {
+    }
+
+    a:hover {
+    }
+
+    a:active {
+    }
+
+    a:visited {
+    }
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    background-color: var(--lightBeige);
+    display: flex;
+    justify-content: center;
+}
+    
+    nav a {
+        background-color: var(--transparentGreen);
+        border: 2px var(--lightBrown);
+        border-radius: 5px 5px 0 0;
+        color: var(--darkBrown);
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-right: 3px;
+        padding: 3px 20px 5px 20px;
+        text-decoration: none
+    }
+
+        nav a:hover {
+            background-color: var(--lightMint);
+            text-decoration: none;
+        }
+/* ----- Local Navigation ----- */
+.local {background-color: var(--lightMint)}
+    .local a{border: solid var(--jadeGreen);
+             font-size: small;
+             padding: 10px;
+             background-color: var(--lightBrown)
+    }
+    .local a:hover {background-color: var(--jadeGreen);
+                    text-decoration: underline;
+    }
+
+    
+
+/*  -----  Typography  ----- */
+p { font-family: "Inter";
+}
+
+br {
+}
+
+ol, ul, dl {
+}
+
+li {
+}
+
+dt {
+}
+
+dd {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Borel", sans-serif;
+}
+
+h1 {text-align:center;
+}
+
+h2 {text-align:center;
+}
+
+h3 {text-align: center;
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+abbr {
+}
+
+acronym {
+}
+
+address {
+}
+
+blockquote {
+}
+
+q {
+}
+
+cite {
+}
+
+em {
+}
+
+hr {
+}
+
+mark {
+}
+
+s {
+}
+
+span {
+}
+
+strong {
+}
+
+sub {
+}
+
+sup {
+}
+
+time {
+}
+
+/*  ----- Coding or instructional typography ----- */
+pre {
+}
+
+code {
+}
+
+kbd {
+}
+
+samp {
+}
+
+var {
+}
+
+del {
+}
+
+ins {
+}
+
+/*  ----- Table ----- */
+table {
+}
+
+caption {
+}
+
+thead {
+}
+
+tbody {
+}
+
+tfoot {
+}
+
+tr {
+}
+
+    tr:nth-child(even) {
+    }
+
+th {
+}
+
+td {
+}
+
+    td:nth-child(1) {
+    }
+
+colgroup {
+}
+
+data {
+}
+
+datalist {
+}
+
+
+/*  ----- Form ----- */
+form {
+}
+
+fieldset {
+}
+
+legend {
+}
+
+label {
+}
+
+button {
+}
+
+input {
+}
+
+select {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+}
+
+output {
+}
+
+meter {
+}
+
+progress {
+}
+
+
+/* ----- Media ----- */
+figure {
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+}
+
+svg {
+}
+
+picture {
+}
+
+source {
+}
+
+iframe {
+}
+
+video {
+}
+
+audio {
+}
+
+embed {
+}
+
+object {
+}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+    .gallery figure {
+        width: 320px;
+        margin: 1%;
+        padding: 2%;
+        border: solid var(--lightMint)
+    }
+    .gallery figcaption {
+        display: block;
+        padding: 1% 1% 1% 1%;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+.floatright {
+}
+
+.floatleft {
+}
+
+.center-middle {
+}
+
+.ten {
+}
+
+.twenty {
+}
+
+.thirty {
+}
+
+.forty {
+}
+
+.fifty {
+}
+
+.sixty {
+}
+
+.seventy {
+}
+
+.eighty {
+}
+
+.radius {
+}
+
+.circle {
+}
+
+.boxshadow {
+}
+
+.tshadow {
+}
+
+.gradient {
+}
+
+.shape {
+}
+
+@keyframes App-logo {
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+}
